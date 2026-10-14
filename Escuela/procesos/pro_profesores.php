@@ -164,7 +164,39 @@ $profesores = mysqli_query($conexion, "SELECT * FROM profesores WHERE estatus = 
 </head>
 <body>
 
-<h2>Procesos — Profesores</h2>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet"/>
+    <title>Bootstrap Example</title>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body class="p-3 m-0 border-0 bd-example m-0 border-0">
+    <!-- Example Code Start-->
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="false" href="../index.php">← Inicio</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"
+          >Todo de profesores</a>
+        <ul class="dropdown-menu" style="">
+          <li><a class="dropdown-item" href='../registro/reg_profesores.php'>Nuevo profesores</a><li>
+          <li><a class="dropdown-item" href='../Baja/ba_profesores.php'>Profesor en Baja</a></li>
+          <li><a class="dropdown-item" href='../reportes/rep_profesores.php'>Reporte</a></li>
+          <li><hr class="dropdown-divider" /></li>
+          <li><a class="dropdown-item" href='#'>nada</a></li>
+        </ul>
+      </li>
+    </ul>
+  </body>
+</html>
+    
+<h2>Profesores</h2>
 
 <?php if($editar): ?>
 <h3>Editar Profesor</h3>
