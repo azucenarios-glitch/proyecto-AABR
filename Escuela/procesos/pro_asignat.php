@@ -106,7 +106,7 @@ p{padding:10px;border-radius:4px;font-weight:bold}
 <body>
 
 <div class="container">
-<h2>Proceso: Asignación de Materias</h2>
+<h2>Asignación de Materias</h2>
 <?php if($mensaje != "") echo "<p class='msg'>$mensaje</p>"; ?> 
 <form action="pro_asignat.php" method="POST">
 <label for="id_mat">ID de Materia (`id-mat`):</label>
